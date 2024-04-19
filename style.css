@@ -1,0 +1,30 @@
+*{
+    margin: 0 auto;
+    background-color: #FFD1DC;
+}
+.plant {
+    position: relative;
+    width: 200px; /* Ajusta el tamaño según necesites */
+    height: 200px; /* Ajusta el tamaño según necesites */
+  }
+  
+  .plant img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: sway 2s ease-in-out infinite alternate; /* Cambia la duración y el efecto según prefieras */
+    transform-origin: center bottom; /* La base de la rotación es el centro inferior */
+  }
+
+  @keyframes sway {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
